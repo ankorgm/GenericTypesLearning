@@ -5,7 +5,9 @@ public class Main {
 
 
     public static void main(String[] args) {
-         Object o = new Scanner(System.in);
+
+       /*
+        Object o = new Scanner(System.in);
 
 
 
@@ -20,6 +22,19 @@ public class Main {
          }
 
          Object o1 = new String();
+
+*/
+
+     Object[] objects = {10, "Привет", 3.14}; // Здесь происходит автоупаковка
+
+     for (Object o: objects){
+         if (o instanceof String){
+             String s = (String) o;
+             System.out.println(s);
+         }
+
+
+     }
 
 
     }
